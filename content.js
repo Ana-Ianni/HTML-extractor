@@ -18,6 +18,8 @@ document.getElementById('trigger').addEventListener('click', () => {
           document.execCommand("copy");
         
           document.body.removeChild(textArea);
+
+          alert("Copied to clipboard! :)");
       };
 
       chrome.scripting.executeScript({
